@@ -74,6 +74,10 @@ input[type="checkbox"] {
 
 /* Media query para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
+  body
+  {
+    font-family: "Arial", sans-serif; /* Cambiar la familia de fuentes según tus preferencias */
+  }
   .headerContainer .nav-links {
     display: none;
     position: absolute;

@@ -1,0 +1,122 @@
+/* Media Query para pantallas más pequeñas */
+/****************Header*******************/
+/* Media Query para tablets */
+@media (max-width: 1024px) {
+    header .overlay {
+      padding: 80px;
+    }
+  
+    .overlay h1 {
+      font-size: 60px;
+      margin-bottom: 25px;
+    }
+  
+    .overlay h3,
+    .overlay p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+  }
+  
+  /* Media Query para dispositivos móviles */
+  /****************Header*******************/
+  @media (max-width: 480px) {
+    header .overlay {
+      padding: 15px;
+    }
+  
+    .overlay h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .overlay h3,
+    .overlay p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+/********************************/
+/* ***********about us**********/
+/*******************************/
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para tablets */
+    #about-us .left-div,
+    #about-us .right-div {
+      flex: 100%;
+      padding: 10px; /* Ajusta el padding para tablets */
+    }
+  
+    #about-us .images {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Restaura el alineamiento vertical a flex-start */
+    }
+  
+    #about-us .company-image,
+    #about-us .small-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; /* Ajusta el margin-bottom para tablets */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Estilos para dispositivos móviles */
+    #about-us .left-div,
+    #about-us .right-div {
+      flex: 100%;
+      padding: 5px; /* Ajusta el padding para dispositivos móviles */
+    }
+  
+    #about-us .images {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; /* Restaura el alineamiento vertical a flex-start */
+    }
+  
+    #about-us .company-image,
+    #about-us .small-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 5px; /* Ajusta el margin-bottom para dispositivos móviles */
+    }
+  }
+  
+  
+  
+  /* Estilos para tablets */
+  @media (max-width: 768px) {
+    .service-card {
+      width: 100%;
+    }
+  }
+  
+  /* Estilos para celulares */
+  @media (max-width: 480px) {
+    .service-card {
+      margin: 10px;
+    }
+  }
+
+
+
+  /* Animación para los ítems de la lista */
+
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-image {
+    flex: initial;
+  }
+}
+
+
+
+
+
+

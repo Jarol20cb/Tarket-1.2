@@ -1,0 +1,331 @@
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+/**************************/
+/**********Header**********/
+/**************************/
+header {
+  background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+  text-align: center;
+  width: 100%;
+  height: 100vh; /* Ajusta la altura del encabezado según tus necesidades */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+header .overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #333;
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header.jpg');*/
+  background-size: cover;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.overlay h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.overlay h3,
+.overlay p {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  
+}
+.overlay h3{
+  color: #FFF;
+}
+
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;     /*COLOR DEL TEXTO*/
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #000000;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #3e4344;
+  box-shadow: 4px 5px 17px -4px #000000;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #000000;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%;
+}
+
+
+/*NAV*/
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*para hacer gris*/
+.video-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+  z-index: 2;
+}
+
+
+/* Estilos para la sección "About Us" */
+#about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+#about-us .left-div {
+  flex: 1;
+  padding: 40px; /* Modifica el valor del padding aquí */
+}
+
+#about-us .right-div {
+  flex: 1;
+  padding: 20px; /* Modifica el valor del padding aquí */
+}
+
+#about-us .company-image {
+  max-width: 65%; /* Modifica el tamaño máximo de la imagen aquí */
+  height: auto;
+  padding: 20px 0px;
+  border-radius: 40px;
+  display: block;
+  margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+#about-us .small-image {
+  max-width: 270px; /* Modifica el tamaño máximo de las imágenes pequeñas aquí */
+  height: auto;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+#about-us h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+#about-us h2,
+#about-us h3 {
+  color: #333;
+  padding: 6px;
+  text-align: center;
+}
+
+#about-us p {
+  color: #777;
+  padding: 6px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#about-us .images {
+  display: flex;
+  justify-content: center; /* Centra las imágenes */
+  margin-bottom: 20px;
+}
+
+/* Estilos para la sección "Services" */
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+.service-general {
+  text-align: center;
+  padding: 20px;
+}
+
+.service-general h1 {
+  color: #000000;
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding: 45px;
+}
+
+.service-general p {
+  color: #777;
+  font-size: 18px;
+}
+
+.service-card {
+  width: 300px;
+  padding: 20px;
+  margin: 35px;
+  background-color: #ffffff;   /*color de las cards*/
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card .icon img{
+  width: 60px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto; /* Ajusta la altura automáticamente en función del ancho */
+}
+
+.service-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #777;
+}
+
+/* Efecto de animación en el hover */
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilos para la sección "Contact" */
+#contact {
+  display: flex;
+  background-color: #FFF;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 70px 0px;
+  overflow: hidden;
+}
+
+
+.contact-info {
+  flex: 1;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  max-width: 50%;
+  height: auto;
+}
+
+#contact h2 {
+  color: #333;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+#contact p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact li {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#contact li:before {
+  content: "\2022";
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 5px;
+}
+
+
+/*FOOTER*/
+
